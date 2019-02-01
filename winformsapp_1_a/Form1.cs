@@ -16,5 +16,40 @@ namespace winformsapp_1_a
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            int age = int.Parse(tbAge.Text);
+            
+            string name = tbName.Text;
+
+            if (age > 30)
+            {
+                MessageBox.Show($" Hello { name } you are {age} and you can enter");
+            }
+            else
+            {
+                MessageBox.Show($" Hello { name } you are you too young go home");
+            }
+
+            //MessageBox.Show($"Hello  {tbName.Text}");
+
+            
+        }
     }
 }
